@@ -19,7 +19,7 @@ const activities: Activity[] = [
   {
     id: "1",
     type: "new_product",
-    description: "Added new product "AirPods Pro"",
+    description: 'Added new product "AirPods Pro"',
     time: "2 hours ago",
     user: {
       name: "John Doe",
@@ -40,7 +40,7 @@ const activities: Activity[] = [
   {
     id: "3",
     type: "product_updated",
-    description: "Updated inventory for "iPhone 15"",
+    description: 'Updated inventory for "iPhone 15"',
     time: "Yesterday",
     user: {
       name: "Jane Smith",
@@ -50,7 +50,7 @@ const activities: Activity[] = [
   {
     id: "4",
     type: "price_changed",
-    description: "Changed price for "MacBook Pro"",
+    description: 'Changed price for "MacBook Pro"',
     time: "2 days ago",
     user: {
       name: "Alex Johnson",
