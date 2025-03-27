@@ -1,4 +1,3 @@
-
 // Types
 export type Product = {
   id: string;
@@ -16,6 +15,17 @@ export type Category = {
   id: string;
   name: string;
   productCount: number;
+};
+
+export type User = {
+  id: string;
+  name: string;
+  email: string;
+  role: "admin" | "manager" | "editor" | "viewer";
+  status: "active" | "inactive" | "pending";
+  avatarUrl?: string;
+  createdAt: string;
+  lastActive?: string;
 };
 
 // Mock product data
@@ -181,5 +191,55 @@ export const categories: Category[] = [
     id: "6",
     name: "Beauty & Personal Care",
     productCount: 0,
+  },
+];
+
+// Mock user data
+export const users: User[] = [
+  {
+    id: "1",
+    name: "John Doe",
+    email: "john.doe@example.com",
+    role: "admin",
+    status: "active",
+    avatarUrl: "https://github.com/shadcn.png",
+    createdAt: "2023-01-15",
+    lastActive: "2023-08-24",
+  },
+  {
+    id: "2",
+    name: "Jane Smith",
+    email: "jane.smith@example.com",
+    role: "manager",
+    status: "active",
+    avatarUrl: "https://github.com/shadcn.png",
+    createdAt: "2023-02-20",
+    lastActive: "2023-08-23",
+  },
+  {
+    id: "3",
+    name: "Alex Johnson",
+    email: "alex.johnson@example.com",
+    role: "editor",
+    status: "inactive",
+    createdAt: "2023-03-10",
+    lastActive: "2023-07-15",
+  },
+  {
+    id: "4",
+    name: "Sarah Williams",
+    email: "sarah.williams@example.com",
+    role: "viewer",
+    status: "active",
+    createdAt: "2023-04-05",
+    lastActive: "2023-08-20",
+  },
+  {
+    id: "5",
+    name: "Michael Brown",
+    email: "michael.brown@example.com",
+    role: "editor",
+    status: "pending",
+    createdAt: "2023-05-12",
   },
 ];
